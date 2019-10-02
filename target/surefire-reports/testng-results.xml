@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="33951" started-at="2019-09-28T12:40:36 EDT" finished-at="2019-09-28T12:41:10 EDT">
+    <groups>
+      <group name="smoke">
+        <method signature="APITestCases.TC01_1()[pri:0, instance:com.starwars.testcases.APITestCases@60c6f5b]" name="TC01_1" class="com.starwars.testcases.APITestCases"/>
+        <method signature="APITestCases.TC01_2()[pri:0, instance:com.starwars.testcases.APITestCases@60c6f5b]" name="TC01_2" class="com.starwars.testcases.APITestCases"/>
+        <method signature="APITestCases.TC01_3()[pri:0, instance:com.starwars.testcases.APITestCases@60c6f5b]" name="TC01_3" class="com.starwars.testcases.APITestCases"/>
+        <method signature="HomePageTest.filmsPage()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="filmsPage" class="com.starwars.testcases.HomePageTest"/>
+        <method signature="HomePageTest.homePage()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="homePage" class="com.starwars.testcases.HomePageTest"/>
+        <method signature="HomePageTest.videoPage()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="videoPage" class="com.starwars.testcases.HomePageTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Smoke" duration-ms="33951" started-at="2019-09-28T12:40:36 EDT" finished-at="2019-09-28T12:41:10 EDT">
+      <class name="com.starwars.testcases.APITestCases">
+        <test-method status="PASS" signature="TC01_1()[pri:0, instance:com.starwars.testcases.APITestCases@60c6f5b]" name="TC01_1" duration-ms="2214" started-at="2019-09-28T12:40:36 EDT" finished-at="2019-09-28T12:40:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_1 -->
+        <test-method status="PASS" signature="TC01_2()[pri:0, instance:com.starwars.testcases.APITestCases@60c6f5b]" name="TC01_2" duration-ms="349" started-at="2019-09-28T12:40:38 EDT" finished-at="2019-09-28T12:40:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_2 -->
+        <test-method status="PASS" signature="TC01_3()[pri:0, instance:com.starwars.testcases.APITestCases@60c6f5b]" name="TC01_3" duration-ms="2834" started-at="2019-09-28T12:40:39 EDT" finished-at="2019-09-28T12:40:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_3 -->
+      </class> <!-- com.starwars.testcases.APITestCases -->
+      <class name="com.starwars.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="setUp" is-config="true" duration-ms="5699" started-at="2019-09-28T12:40:41 EDT" finished-at="2019-09-28T12:40:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="filmsPage()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="filmsPage" duration-ms="2920" started-at="2019-09-28T12:40:47 EDT" finished-at="2019-09-28T12:40:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filmsPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="tearDown" is-config="true" duration-ms="46" started-at="2019-09-28T12:40:50 EDT" finished-at="2019-09-28T12:40:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="setUp" is-config="true" duration-ms="6279" started-at="2019-09-28T12:40:50 EDT" finished-at="2019-09-28T12:40:56 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="homePage()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="homePage" duration-ms="4" started-at="2019-09-28T12:40:56 EDT" finished-at="2019-09-28T12:40:56 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="tearDown" is-config="true" duration-ms="2310" started-at="2019-09-28T12:40:56 EDT" finished-at="2019-09-28T12:40:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="setUp" is-config="true" duration-ms="6214" started-at="2019-09-28T12:40:59 EDT" finished-at="2019-09-28T12:41:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="videoPage()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="videoPage" duration-ms="2731" started-at="2019-09-28T12:41:05 EDT" finished-at="2019-09-28T12:41:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- videoPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.starwars.testcases.HomePageTest@2038ae61]" name="tearDown" is-config="true" duration-ms="2309" started-at="2019-09-28T12:41:08 EDT" finished-at="2019-09-28T12:41:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.starwars.testcases.HomePageTest -->
+    </test> <!-- Smoke -->
+  </suite> <!-- Suite -->
+</testng-results>
