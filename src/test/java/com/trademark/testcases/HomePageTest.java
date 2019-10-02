@@ -23,6 +23,10 @@ public class HomePageTest extends CommonMethods {
 	public void homePageOne() throws InterruptedException {
 		
 		h=new HomePage();
+		
+		waitForElementBeClickable(h.defaultsFilter, 15);
+		h.defaultsFilter.click();
+		
 				
 		waitForElementBeClickable(h.opposition, 15);
 		
@@ -93,19 +97,27 @@ public class HomePageTest extends CommonMethods {
 		new WebDriverWait(driver,15).until(ExpectedConditions.visibilityOfAllElements(h.issuesList));		
 		List<WebElement>issueList=h.issuesList;
 		
-		for(WebElement run:issueList) {
-			if(h.noRecordFound.isDisplayed()) {
-				run.click();
+		String records=h.recordsCount.getText();
+		
+		
+		for(int i=1;i<issueList.size();i++) {
+			
+			records=h.recordsCount.getText();
+			
+			System.out.println(records);
+			if(records.equals("0")) {
+				issueList.get(i).click();
+								
+			}else {
+				break;
 			}
+			
 			
 		}
 		
-		
-				
+			
 	
-		
-	
-		//Thread.sleep(13000);
+		Thread.sleep(3000);
 
 		
 

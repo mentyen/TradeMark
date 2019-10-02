@@ -10,74 +10,52 @@ import org.openqa.selenium.support.PageFactory;
 import com.trademark.utils.BaseClass;
 
 public class HomePage extends BaseClass {
-	
-	public HomePage(){
+
+	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
 
-		
-	@FindBy(xpath="//div[@class='filterGroup publicPublished']//div[@class='fiveRecent']/div")
-	public List<WebElement> issuesList;
-	
-	@FindBy(xpath="//div[@class='filterGroup publicPublished']//div[@class='fiveRecent']/div[1]/label/input")
-	public WebElement firstIssue;
-	@FindBy(xpath="//div[@class='filterGroup publicPublished']//div[@class='fiveRecent']/div[2]/label/input")
-	public WebElement secondIssue;
-	@FindBy(xpath="//div[@class='filterGroup publicPublished']//div[@class='fiveRecent']/div[3]/label/input")
-	public WebElement thirdIssue;
-	@FindBy(xpath="//div[@class='filterGroup publicPublished']//div[@class='fiveRecent']/div[4]/label/input")
-	public WebElement fourthIssue;
-	@FindBy(xpath="//div[@class='filterGroup publicPublished']//div[@class='fiveRecent']/div[5]/label/input")
-	public WebElement fifthIssue;
-	
-	
-	
-	@FindBy(css="input[class^='pubReasonOpposition']")
-	public WebElement opposition;
-	@FindBy(css="input[class^='registrations']")
-	public WebElement registrations;
-	@FindBy(xpath="//div[@id=\"pubReasonDelegate\"]//div[@class=\"checkbox submenuTitle\"]/label/input")
-	public WebElement registrationCancelled;
-	
-	
-	
-	@FindBy(xpath="//div[@class=\"sidebarGroup\"][4]//div[@class=\"checkbox-inline submenuTitle\"]/label/input")
-	public WebElement internationalClass;
-	
-	@FindBy(xpath="//div[@class=\"sidebarGroup\"][4]//div[@class=\"checkbox submenuTitle\"]/label/input")
-	public WebElement usClass;
-	
-	
-	@FindBy(xpath="//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][3]/div/div/label/input")
-	public List<WebElement> reasonForPublication;
-	
-	@FindBy(xpath="//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][4]/div/div/label/input")
-	public List<WebElement> classNumbers;
-	
-	
-	@FindBy(xpath="//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][5]/div/div/label/input")
-	public List<WebElement> register;
-	
-	
-	@FindBy(xpath="//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][6]/div/div/label/input")
-	public List<WebElement> numberOfclasses;
-	
-	@FindBy(xpath="//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][7]/div/div/label/input")
-	public List<WebElement> markType;
-	
-	@FindBy(xpath="//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][8]/div/div/label/input")
-	public List<WebElement> basisList;
-	
-	
-	
-	@FindBy(xpath="//*[@class=\"container-fluid\"]//*[@class=\"row noResultTile\"]/div/h3")
-	public WebElement noRecordFound;
-	
+	@FindBy(css = "button[class^=\"defaultSearch\"]")
+	public WebElement defaultsFilter;
 
-	
-	
-	
-	
-	
-	
+	@FindBy(xpath = "//div[@id='tableControls']//span[@class='pageCount ng-binding']")
+	public WebElement recordsCount;
+
+	@FindBy(xpath = "//div[@class='filterGroup publicPublished']//div[@class='fiveRecent']/div/label/input")
+	public List<WebElement> issuesList;
+
+	@FindBy(css = "input[class^='pubReasonOpposition']")
+	public WebElement opposition;
+	@FindBy(css = "input[class^='registrations']")
+	public WebElement registrations;
+	@FindBy(xpath = "//div[@id=\"pubReasonDelegate\"]//div[@class=\"checkbox submenuTitle\"]/label/input")
+	public WebElement registrationCancelled;
+
+	@FindBy(xpath = "//div[@class=\"sidebarGroup\"][4]//div[@class=\"checkbox-inline submenuTitle\"]/label/input")
+	public WebElement internationalClass;
+
+	@FindBy(xpath = "//div[@class=\"sidebarGroup\"][4]//div[@class=\"checkbox submenuTitle\"]/label/input")
+	public WebElement usClass;
+
+	@FindBy(xpath = "//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][3]/div/div/label/input")
+	public List<WebElement> reasonForPublication;
+
+	@FindBy(xpath = "//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][4]/div/div/label/input")
+	public List<WebElement> classNumbers;
+
+	@FindBy(xpath = "//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][5]/div/div/label/input")
+	public List<WebElement> register;
+
+	@FindBy(xpath = "//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][6]/div/div/label/input")
+	public List<WebElement> numberOfclasses;
+
+	@FindBy(xpath = "//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][7]/div/div/label/input")
+	public List<WebElement> markType;
+
+	@FindBy(xpath = "//div[@id='sidebarDelegate']//div[@class=\"sidebarGroup\"][8]/div/div/label/input")
+	public List<WebElement> basisList;
+
+	@FindBy(xpath = "//*[@class=\"container-fluid\"]//*[@class=\"row noResultTile\"]/div/h3")
+	public WebElement noRecordFound;
+
 }
